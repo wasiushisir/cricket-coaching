@@ -10,7 +10,7 @@ const Service = ({ service }) => {
                 <h5>Name: {name}</h5>
                 <h5>Price: ${price}</h5>
                 <p ><b>Description:</b>{description}</p>
-                {/* <button className=' btn btn-primary' >CheckOut</button> */}
+                 <button className=' btn btn-primary' >CheckOut</button> 
 
             </div>
         </div>
