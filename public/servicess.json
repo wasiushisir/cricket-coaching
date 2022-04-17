@@ -1,0 +1,25 @@
+[
+    {
+        "id": "1",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Grant_Flower_%281%29.jpg/400px-Grant_Flower_%281%29.jpg",
+        "price": "15000",
+        "name": "Batting-section",
+        "description": "The captain of the team can change the batting order during the game at his or her discretion. They can even change the batting line-up from one game to another in a tournament or series. There are no rules about the nature or number of changes made and, if more than one innings is played, the order used in each need not be the same. It has even been known for a captain to completely reverse his batting order for the second innings after following on."
+    },
+
+    {
+        "id": "2",
+        "img": "https://i.ibb.co/P9Swb1h/san-1.jpg",
+        "price": "12000",
+        "name": "Bowling-section",
+        "description": "Bowling in test matches can be a tough task. It is because batters are not willing to go after the bowlers. This can create a scene of lesser wickets. But being on the list of best bowling figures in an innings in a test match is quite an achievement. This particularly is because the bowlers have done the hard yards."
+    },
+
+    {
+        "id": "3",
+        "img": "https://i.ibb.co/3SXQHgp/gettyimages-73826718-612x612-1.jpg",
+        "price": "10000",
+        "name": "Fielding-section",
+        "description": "Fielding in the sport of cricket is the action of fielders in collecting the ball after it is struck by the striking batter, to limit the number of runs that the striker scores and/or to get a batter out by either catching a hit ball before it bounces, or by running out either batter before they can complete the run they are currently attempting. There are a number of recognised fielding positions, and they can be categorised into the offside and leg side of the field. Fielding also involves preventing the ball from going to or over the edge of the field (which would result in runs being scored by the batting team in the form of a boundary)."
+    }
+]
