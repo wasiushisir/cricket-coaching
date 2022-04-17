@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Googlesign from '../Googlesign/Googlesign';
 
 const Registration = () => {
 
@@ -76,6 +77,8 @@ const Registration = () => {
           Submit
         </Button>
       </Form>
+
+      <Googlesign></Googlesign>
 
     </div>
   );

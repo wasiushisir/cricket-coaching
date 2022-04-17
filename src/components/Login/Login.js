@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import Googlesign from '../Googlesign/Googlesign';
 
 
 const Login = () => {
@@ -55,6 +56,8 @@ const Login = () => {
                     Submit
                 </Button>
             </Form>
+
+            <Googlesign></Googlesign>
         </div>
 
 
