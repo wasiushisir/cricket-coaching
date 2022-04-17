@@ -16,7 +16,7 @@ const Registration = () => {
     loading,
     error2,
   ] = useCreateUserWithEmailAndPassword(auth);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -38,14 +38,13 @@ const Registration = () => {
     createUserWithEmailAndPassword(email, password);
 
 
-    
+
   }
 
-  if(user)
-    {
-      navigate('/home');
+  if (user) {
+    navigate('/home');
 
-    }
+  }
 
 
 
@@ -72,7 +71,7 @@ const Registration = () => {
         </Form.Group>
         <p>Already have an account?<span className='ps-2'><Link className='text-decoration-none' to='/login'> Login</Link></span></p>
         <p className='text-danger'>{error}</p>
-        <p className=''> {error2?.message}</p>
+        <p className='text-danger'> {error2?.message}</p>
         <Button variant="primary" type="submit">
           Submit
         </Button>
