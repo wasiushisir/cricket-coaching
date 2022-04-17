@@ -6,7 +6,7 @@ import auth from '../../firebase.init';
 import Googlesign from '../Googlesign/Googlesign';
 
 const Registration = () => {
-
+  const nameRef=useRef('');
   const emailRef = useRef('');
   const passRef = useRef('');
   const confirmPassRef = useRef('');
@@ -21,9 +21,11 @@ const Registration = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const name=nameRef.current.value;
     const email = emailRef.current.value;
     const password = passRef.current.value;
     const confirmPassword = confirmPassRef.current.value;
+    console.log(name,email);
 
     if (password !== confirmPassword) {
       setError('Your password does not match');
@@ -54,6 +56,13 @@ const Registration = () => {
       <h2 className='text-center text-primary mt-4'>Please Registration!!!!</h2>
 
       <Form onSubmit={handleSubmit}>
+      <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Email Name</Form.Label>
+          <Form.Control ref={nameRef} type="text" placeholder="Enter Name" />
+          <Form.Text className="text-muted">
+
+          </Form.Text>
+        </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
