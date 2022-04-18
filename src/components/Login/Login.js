@@ -56,7 +56,7 @@ const Login = () => {
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
                     <Form.Text className="text-muted">
 
                     </Form.Text>
@@ -64,7 +64,7 @@ const Login = () => {
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control ref={passRef} type="password" placeholder="Password" />
+                    <Form.Control ref={passRef} type="password" placeholder="Password" required/>
                 </Form.Group>
                 <p>New in Cricket academy?<span className='ps-2'><Link className='text-decoration-none' to='/registration'> Register</Link></span></p>
                 <p>Forget Password<span className='ps-2'><button onClick={handleResetPassword} className='text-decoration-none btn btn-link text-primary' > Reset Password</button></span></p>

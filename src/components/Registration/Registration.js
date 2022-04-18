@@ -58,14 +58,14 @@ const Registration = () => {
       <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Email Name</Form.Label>
-          <Form.Control ref={nameRef} type="text" placeholder="Enter Name" />
+          <Form.Control ref={nameRef} type="text" placeholder="Enter Name" required />
           <Form.Text className="text-muted">
 
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
+          <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
           <Form.Text className="text-muted">
 
           </Form.Text>
@@ -73,11 +73,11 @@ const Registration = () => {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control ref={passRef} type="password" placeholder="Password" />
+          <Form.Control ref={passRef} type="password" placeholder="Password" required />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
           <Form.Label>Confirm Password</Form.Label>
-          <Form.Control ref={confirmPassRef} type="password" placeholder="Confirm Password" />
+          <Form.Control ref={confirmPassRef} type="password" placeholder="Confirm Password" required/>
         </Form.Group>
         <p>Already have an account?<span className='ps-2'><Link className='text-decoration-none' to='/login'> Login</Link></span></p>
         <p className='text-danger'>{error}</p>

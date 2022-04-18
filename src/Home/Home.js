@@ -9,18 +9,18 @@ import img3 from '../img/crick3.jpg'
 
 const Home = () => {
     const [services, setServices] = useState([]);
-    const [feedbacks,setFeedback]=useState([]);
+    const [feedbacks, setFeedback] = useState([]);
     useEffect(() => {
         fetch('servicess.json')
             .then(response => response.json())
             .then(data => setServices(data))
     }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('feedback.json')
-        .then(response=>response.json())
-        .then(data=>setFeedback(data))
-    },[])
+            .then(response => response.json())
+            .then(data => setFeedback(data))
+    }, [])
 
 
 
@@ -34,8 +34,8 @@ const Home = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Batting Practice</h3>
+                        <p>Batting is so important practice more and more</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -46,8 +46,8 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Bowling Practice </h3>
+                        <p>keep patience and work hard</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -58,56 +58,56 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Stadium scenary</h3>
+                        <p>stadium place where everyone dream to play</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
 
-           
-            <div id='services'  className='container'>
-            <h1  className='text-primary text-center mb-4 mt-4'>My Services</h1>
+
+            <div id='services' className='container'>
+                <h1 className='text-primary text-center mb-4 mt-4'>My Services</h1>
                 <div className='row'>
-                
 
 
-                {
-                    services.map(service => <Service service={service} key={service.id}></Service>)
-                }
-                    
-                    
-                    
-                  
+
+                    {
+                        services.map(service => <Service service={service} key={service.id}></Service>)
+                    }
+
+
+
+
 
 
                 </div>
-                
 
-                 
+
+
             </div>
 
 
 
-            <div id='feedbacks'  className='container'>
-            <h1  className='text-primary text-center mb-4 mt-4'>Feedback</h1>
+            <div id='feedbacks' className='container'>
+                <h1 className='text-primary text-center mb-4 mt-4'>Feedback</h1>
                 <div className='row'>
-                
 
 
-                {
-                    feedbacks.map(feedback=><Feedback key={feedback.id} feedback={feedback}></Feedback>)
-                    
-                }
-                    
-                    
-                    
-                  
+
+                    {
+                        feedbacks.map(feedback => <Feedback key={feedback.id} feedback={feedback}></Feedback>)
+
+                    }
+
+
+
+
 
 
                 </div>
-                
 
-                 
+
+
             </div>
 
 
