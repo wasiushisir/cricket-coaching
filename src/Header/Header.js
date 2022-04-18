@@ -16,7 +16,7 @@ const Header = () => {
         
             <Navbar   collapseOnSelect expand="lg" bg="primary " variant="dark" sticky="top "  >
                 <Container>
-                    <Navbar.Brand as={Link} to="/"><img height={60} width={50} src={img} alt="" /></Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"><img height={60} width={50} src={img} alt="" />Banngla Track Cricket coaching</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

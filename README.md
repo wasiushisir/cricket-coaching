@@ -3,11 +3,11 @@
 - i create login and signup section by firebase react hook
 - in all service section i create checkout button where this button is protected route
 - in checking section every individual user can booking their service
-- framework(react,react-router,react firebase hooks)
+- libraries(react,react-router,react firebase hooks)
 
 
 
-This project was bootstrapped with 
+This project was bootstrapped with https://cricket-academy-41c29.web.app/
 
 ## Available Scripts
 
