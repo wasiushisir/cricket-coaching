@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Bangla Track Cricket Academy
+- There is 3 service section in my website
+- i create login and signup section by firebase react hook
+- in all service section i create checkout button where this button is protected route
+- in checking section every individual user can booking their service
+- framework(react,react-router,react firebase hooks)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+This project was bootstrapped with 
 
 ## Available Scripts
 
